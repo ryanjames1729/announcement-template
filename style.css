@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f3f4f6;
+    background-image: url('pexels-emma-bauso-3585812.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Homemade Apple", sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.heading {
+    text-align: center;
+    margin-top: -10em;
+}
+
+.details {
+    text-align: center;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1em;
+    color: black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9);
+}
+
+.details h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem
+}
+
+.details p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-shadow:rgba(255, 255, 255, 0.9)
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        margin-top: -10rem;
+        padding: 0.2rem;
+    }
+
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+    
+    .details {
+        width: 90%;
+    }
+
+    .details h2 {
+        margin: 0;
+        font-size: 1.7rem;
+    }
+
+    .details p {
+        font-size: 1rem;
+    }
+
+    body {
+        margin: 0 auto;
+    }
+    
+}
